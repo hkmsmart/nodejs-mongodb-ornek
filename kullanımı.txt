@@ -1,6 +1,6 @@
 Uygulamayı indirdikten sonra.
 Terminal / cmd ile klasörün olduğu dizine / klasöre giriniz.
->nem start 
+>npm start 
 Komutunu çalıştırınız.
 Uygulama başladıktan sonra 
 Tarayıcıyı açınız.
