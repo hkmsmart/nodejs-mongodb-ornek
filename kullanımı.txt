@@ -1,0 +1,8 @@
+Uygulamayı indirdikten sonra.
+Terminal / cmd ile klasörün olduğu dizine / klasöre giriniz.
+>nem start 
+Komutunu çalıştırınız.
+Uygulama başladıktan sonra 
+Tarayıcıyı açınız.
+http://localhost:3000/users
+Adresine giriniz.

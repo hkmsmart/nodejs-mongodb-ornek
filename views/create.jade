@@ -1,0 +1,31 @@
+head
+    title= title
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css')
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js")
+body
+div.container
+    div.content
+        h1 Yeni kullanıcı Oluştur
+        hr
+        form.form-horizontal(action='/users/create',method='POST')
+            div.form-group
+                label.col-sm-2.control-label(for="ad-input") Ad 
+                div.col-sm-10 
+                    input.form-control(id="ad-input" name="ad" placeholder="Adnınız")
+            div.form-group
+                label.col-sm-2.control-label(for="soyad-input") soyad 
+                div.col-sm-10 
+                    input.form-control(id="soyad-input" name="soyad" placeholder="soyadınız")
+            div.form-group
+                label.col-sm-2.control-label(for="dogumTarihi-input") Doğum Tarihi 
+                div.col-sm-10 
+                    input.form-control(id="dogumTarihi-input" name="dogumTarihi" placeholder="dogumTarihiniz")
+            div.form-group
+                label.col-sm-2.control-label(for="email-input") E-posta
+                div.col-sm-10 
+                    input.form-control(id="email-input" name="email" placeholder="emailiniz")
+            div.form-group
+                div.col-sm-offset-2.col-sm-10 
+                    button.btn.btn-success(type="submit") Kullanıcı ekle
+
+                                 

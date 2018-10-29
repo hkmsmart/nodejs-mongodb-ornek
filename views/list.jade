@@ -1,0 +1,32 @@
+head
+        title= title
+        link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css')
+        script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js")
+body
+div.container
+    div.content
+        div.row
+            h1 Kullanıcı Listesi
+        hr
+        div.row
+            table.table.table-hover.table-bordered
+                thead
+                    tr
+                        th ad
+                        th soyad
+                        th Doğum Tarihi
+                        th E-posta
+                        th işlem
+                tbody
+                each users, i in userList
+                    tr
+                        td #{users.ad}
+                        td #{users.soyad}
+                        td #{users.dogumTarihi}
+                        td #{users.email}
+                        td
+                            a.btn.btn-danger.btn-xs(href="/users/delete/"+users._id) Kullanıcı sil
+                hr
+                div.row
+                    div.col-md-12 
+                        a.btn.btn-default(href="/users/create") Yeni kullanıcı ekle 
